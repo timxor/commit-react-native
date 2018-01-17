@@ -1,0 +1,9 @@
+[
+  {"name": "Samantha D", "miles": 2, "age": 35, "height": "5'11", "bodyType": "thin", "religion": "agnostic", "political": "technocrat", "lifestyle": "sedentary", "first date days available": "TH,FR,SA", "first date pref": "coffee, tea, lounge"},
+  {"name": "Veronica P", "miles": 3, "age": 25, "height": "5'11", "bodyType": "husky", "religion": "agnostic", "political": "technocrat", "lifestyle": "sedentary", "first date days available": "TH,FR,SA", "first date pref": "coffee, tea, lounge"},
+  {"name": "Dori Q", "miles": 4, "age": 22, "height": "5'11", "bodyType": "slender", "religion": "agnostic", "political": "technocrat", "lifestyle": "sedentary", "first date days available": "TH,FR,SA", "first date pref": "coffee, tea, lounge"},
+  {"name": "Carmen L", "miles": 2, "age": 18, "height": "5'11", "bodyType": "chunky", "religion": "agnostic", "political": "technocrat", "lifestyle": "sedentary", "first date days available": "TH,FR,SA", "first date pref": "coffee, tea, lounge"},
+  {"name": "Vivian N", "miles": 5, "age": 42, "height": "5'11", "bodyType": "fit", "religion": "agnostic", "political": "technocrat", "lifestyle": "sedentary", "first date days available": "TH,FR,SA", "first date pref": "coffee, tea, lounge"},
+  {"name": "Natasha E", "miles": 3, "age": 29, "height": "5'11", "bodyType": "thin", "religion": "agnostic", "political": "technocrat", "lifestyle": "sedentary", "first date days available": "TH,FR,SA", "first date pref": "coffee, tea, lounge"},
+  {"name": "Mallory M", "miles": 2, "age": 30, "height": "5'11", "bodyType": "husky", "religion": "agnostic", "political": "technocrat", "lifestyle": "sedentary", "first date days available": "TH,FR,SA", "first date pref": "coffee, tea, lounge"}
+]
