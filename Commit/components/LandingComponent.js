@@ -12,7 +12,11 @@ export default class LandingComponent extends React.Component {
 
 
 
-
+// to do-- for redirect after legit log or how to manage state of log
+//
+// see :
+// https://github.com/reactjs/redux/issues/297#issuecomment-124116124
+//
 // componentWillMount
 
 	_fbAuth() {
@@ -21,11 +25,11 @@ export default class LandingComponent extends React.Component {
 	    if(result.isCancelled) {
 	      alert('Login cancelled');
 	    } else {
-	      console.log('Login success: ' + result.grantedPermissions);
+	      alert('Login success: ' + result.grantedPermissions);
 		  {this.props.navigate(PlatformScreen);}
 	    }
 	  }, function(error) {
-	    console.log('Promise was rejected: ' + error);
+	    alert('Promise was rejected: ' + error);
 	  })
 	}
 
