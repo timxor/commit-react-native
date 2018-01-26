@@ -13,7 +13,7 @@ export default class LoginWithNumber extends Component {
 				justifyContent: 'center',
 			}}>
 			<Text style={{ fontWeight: 'bold', fontSize: 22, color: 'white' }}>
-				LoginWithNumber Screen
+				Enter your number here to verify you are a human ;)
 			</Text>
 		</View>
 	);

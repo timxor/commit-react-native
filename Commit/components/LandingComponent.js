@@ -1,24 +1,52 @@
 import React, { Component } from 'react';
-import { LoginWithFacebookScreen, LoginWithNumberScreen } from '../screenNames';
+import { LoginWithFacebookScreen, LoginWithNumberScreen, PlatformScreen } from '../screenNames';
 import Button from 'react-native-button';
-import { Text, View, StyleSheet, TouchableHighlight } from 'react-native';
+import { Text, View, StyleSheet, TouchableHighlight, TouchableOpacity } from 'react-native';
+import FBSDK, { LoginManager } from 'react-native-fbsdk';
+
+
+
+
 
 export default class LandingComponent extends React.Component {
+
+
+
+
+// componentWillMount
+
+	_fbAuth() {
+
+	  LoginManager.logInWithReadPermissions(['public_profile']).then(function(result) {
+	    if(result.isCancelled) {
+	      alert('Login cancelled');
+	    } else {
+	      console.log('Login success: ' + result.grantedPermissions);
+		  {this.props.navigate(PlatformScreen);}
+	    }
+	  }, function(error) {
+	    console.log('Promise was rejected: ' + error);
+	  })
+	}
+
+
+
 
 	render() {
 		const { navigation } = this.props;
 
 		return (
 			<View style={styles.container}>
-					<Text style={styles.text}>Welcome to Commit</Text>
+				<Text style={styles.text}>Welcome to Commit</Text>
 
-					<Button containerStyle={styles.btnContainer}
-							style={styles.btn}
-							onPress={() => {navigation.navigate(LoginWithFacebookScreen); }}
-					>
 
-					<Text style={styles.btn}>Login with Facebook</Text>
-					</Button>
+				<Button containerStyle={styles.btnContainer}
+						style={styles.btn}
+						onPress={this._fbAuth}
+				>
+
+				<Text style={styles.btn}>Login with Facebook</Text>
+				</Button>
 
 				<Button containerStyle={styles.btnContainerPhone}
 						style={styles.btn}

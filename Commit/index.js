@@ -5,6 +5,8 @@ import { LandingScreen, LoginWithFacebookScreen, LoginWithNumberScreen } from '.
 import LandingComponent from './components/LandingComponent';
 import LoginWithFacebook from './components/LoginWithFacebook';
 import LoginWithNumber from './components/LoginWithNumber';
+import PlatformScreen from './components/PlatformScreen';
+
 
 const App = StackNavigator({
 	LandingScreen: {
@@ -24,6 +26,12 @@ const App = StackNavigator({
 		navigationOptions: {
 			headerTitle: 'Login with your number',
 	  	},
+	},
+	PlatformScreen: {
+		screen: PlatformScreen,
+		navigationOptions: {
+			headerTitle: 'Platforms',
+		},
 	},
 });
 AppRegistry.registerComponent('Commit', () => App);
