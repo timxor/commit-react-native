@@ -1,18 +1,28 @@
 # commit mvp front end
 
+## quick start
 
-## run ios simulator app
-
+### run ios simulator app
 ```
-cd commitMvp
-react-native run-ios --simulator="iPhone 8"
-```
-or:
-```
-react-native run-ios --simulator="iPhone X"
+cd commitMvp 
+npm install
+react-native run-ios #--simulator="iPhone 8"
 ```
 
-## to do
+### view simulators:
+``` xcrun simctl list devices ```
+``` du -sh ~/Library/Developer/CoreSimulator/Devices ```
+
+### update react (if it wont build):
+``` 
+react-native upgrade
+npm install --save react-native@latest
+npm install 
+npm audit fix --force
+```
+### next item
+
+### to do:
 
 Integrate fb login with login view
 Connect to backend database
